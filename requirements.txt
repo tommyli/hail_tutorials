@@ -24,6 +24,7 @@ Deprecated==1.2.12
 dill==0.3.4
 entrypoints==0.3
 fsspec==0.9.0
+gcloud==0.18.3
 gcsfs==0.8.0
 google-api-core==1.31.0
 google-auth==1.33.0
@@ -33,6 +34,7 @@ google-cloud-storage==1.25.0
 google-resumable-media==0.5.1
 googleapis-common-protos==1.53.0
 hail==0.2.71
+httplib2==0.19.1
 humanize==1.0.0
 hurry.filesize==0.9
 idna==2.10
@@ -62,6 +64,7 @@ nbformat==5.1.3
 nest-asyncio==1.5.1
 notebook==6.4.0
 numpy==1.21.0
+oauth2client==4.1.3
 oauthlib==3.1.1
 packaging==21.0
 pandas==1.1.4
