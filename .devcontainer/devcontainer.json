@@ -44,7 +44,7 @@
 	],
 	
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo python3 $HOME/.local/bin/install-gcs-connector.py -k $HOME/.config/gcloud/application_default_credentials.json",
+	"postCreateCommand": "scripts/install-gcs-connector.sh",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
