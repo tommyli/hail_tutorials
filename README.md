@@ -10,7 +10,8 @@ Repo for trying out [Hail Tutorials](https://hail.is/docs/0.2/tutorials-landing.
 ## Getting Started
 
 1. Clone this repo
-2. Start VS Code, press F1, and select Remote-Containers: Open Folder in Container... Select the path you cloned this repo to. 
+2. Start VS Code, press F1, and select Remote-Containers: Open Folder in Container... Select the path you cloned this
+   repo to. 
 
 ## devcontainer addons
 
@@ -22,5 +23,14 @@ were added/configured.
   [hail](https://hail.is/docs/0.2/index.html) and [gcloud](https://pypi.org/project/gcloud/)
 * openjdk-11-jdk
 * [Google Cloud SDK](https://cloud.google.com/sdk/docs/install)
-* Steps for Hail to [Reading from Google Cloud
-  Storage](https://hail.is/docs/0.2/cloud/google_cloud.html#reading-from-google-cloud-storage)
+
+### Google Cloud Config
+
+Google Cloud SDK is installed in the container but the easiest way to use it is to share your host's Google Cloud SDK
+config as a Docker volume mount.  This of course assumes your host is already configured to access Google Cloud, i.e.
+`$HOME/.config/gcloud` already exists in your host with correct configurations.  If not, then:
+  1. Follow [Google Cloud SDK install]([Google Cloud SDK](https://cloud.google.com/sdk/docs/install)) instructions.
+  2. Run `gcloud auth application-default login` and follow prompts
+
+This is also a required step for Hail to [Reading from Google Cloud
+Storage](https://hail.is/docs/0.2/cloud/google_cloud.html#reading-from-google-cloud-storage)
